@@ -12,8 +12,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @NoArgsConstructor
-@Getter
-@Setter
+@Getter   
+@Setter   
 @Entity
 @Table(name = "courses")
 public class Course {
@@ -28,7 +28,7 @@ public class Course {
     @Column(length = 1000 )
     private String comments;
 
-    @Enumerated(EnumType.ORDINAL)   // default
+    @Enumerated(EnumType.STRING)  
     @Column(name = "lesson_type")
     private LessonType lessonType;
 
